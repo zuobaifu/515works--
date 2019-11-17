@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div class="fixed">
+        <div class="index1"><a href="https://leancloud.cn/"><img src="img/1.png" width="153px" height="30px" /></a>
+        </div>
+        <div class="index2">
+            <span>产品
+                <i></i>
+            </span>
+            <div class="detail">
+                <div class="detail1">基础服务
+                </div>
+                <div class="detail2">行业解决方案
+                </div>
+                <div class="detail3">
+                    <a class="detail5" href="https://leancloud.cn/storage/">数据存储</a><br />
+                    <a class="detail5" href="https://leancloud.cn/engine/">云计算＋云引擎</a><br />
+                    <a class="detail5" href="https://leancloud.cn/rtm/">及时通讯</a><br />
+                    <a class="detail5" href="https://leancloud.cn/notification/">消息推送</a><br />
+                    <a class="detail5" href="https://leancloud.cn/sms/">短信</a><br />
+                </div>
+                <div class="detail4">
+                    <a class="detail5" href="https://leancloud.cn/play/">游戏解决方案</a><br />
+                    <a class="detail5" href="https://leancloud.cn/miniprogram/">微信小程序</a><br />
+                </div>
+            </div>
+        </div>
+        <div class="index3"><a class="index10" href="https://leancloud.cn/pricing/">价格</a></div>
+        <div class="index4"><a class="index10" href="https://leancloud.cn/customers/">用户</a></div>
+        <div class="index5"><a class="index10" href="https://leancloud.cn/docs/">文档</a></div>
+        <div class="index6"><a class="index10" href="https://leancloud.cn/tutorials/">学习</a></div>
+        <div class="index7"><a class="index10" href="https://leancloud.cn/support/">帮助</a></div>
+        <div class="index8"><a class="index10" href="https://leancloud.app/">国际版（Intl)</a></div>
+        <div class="index9"><a class="index10" href="https://leancloud.cn/dashboard/login.html#/signin">控制台›</a></div>
+    </div>
+    <div id="banner">
+        <ul id="imglist">
+            <li class="index13">
+                <h1>LeanCloud</h1>
+                <p class="index17">领先的 Serverless 云服务</p>
+                <p class="index16">为产品开发提供强有力的后端支持</p>
+                <div class="index12"><a style="color: white;" href="https://leancloud.cn/login.html#/signup">免费试用
+                        <span>› </span></a>
+                </div>
+            </li>
+            <li class="index14">
+                <h1>通用游戏解决方案（Beta）</h1>
+                <p class="index17" style="font-size: 38px;">实时对战，智能组队，玩家排行榜</p>
+                <p class="index18">轻松开发大型多人游戏</p>
+                <div class="index12"><a style="color: white;" href="https://leancloud.cn/play/">了解更多 <span> ›</span></a>
+                </div>
+            </li>
+            <li class="index15">
+                <h1>推荐奖励计划</h1>
+                <p class="index17">用个人链接为我们推荐用户</p>
+                <p class="index16">获得首年消费额10%的现金奖励</p>
+                <div class="index19"><a style="color: white;" href="https://leancloud.cn/login.html#/signup">马上参加
+                        <span>›</span></a></div>
+            </li>
+            <li class="index13">
+                <h1>LeanCloud</h1>
+                <p class="index17">领先的 Serverless 云服务</p>
+                <p class="index16">为产品开发提供强有力的后端支持</p>
+                <div class="index12"><a style="color: white;" href="https://leancloud.cn/login.html#/signup">免费试用
+                        <span>›</span></a></div>
+            </li>
+        </ul>
+    </div>
+    <div id="index11">
+        <ol>
+            <li class="logo"></li>
+            <li class="logo"></li>
+            <li class="logo"></li>
+        </ol>
+    </div>
+    <div class="content">
+        <div class="content1">
+            <h3>只差程序员，如何把想法实现？</h3>
+            <p>后端系统的开发和维护不是一件简单的事。搭建团队、开发联<br />调、迭代升级以及线上运维等工作，都需要长期投入。</p>
+            <p>让专业的团队来处理这些棘手的问题，用成熟的云服务来加速产<br />品迭代过程，省时、省钱、省力。</p>
+        </div>
+        <div class="content2"><img src="https://leancloud.cn/assets/imgs/index/server.b2fa22d1.svg" width="450px"
+                height="261px" /></div>
+    </div>
+    <div class="c3">
+        <h2>一站式后端服务</h2>
+        <div class="content3">
+            <a href="https://leancloud.cn/storage/">
+                <img src="img/5.png" width="65px" height="60px" />
+                <h6>数据储存</h6>
+                <p>将业务数据直接存储到云端，真正按需使用。基<br /> 础架构的运维与自动的弹性缩放，完全由服务提<br /> 供者管理。让开发者专注产品体验，支撑业务快速<br /> 启动和成长。</p>
+            </a>
+        </div>
+        <div class="content4">
+            <a href="https://leancloud.cn/engine/">
+                <img src="img/6.png" width="65px" height="60px" />
+                <h6>云引擎</h6>
+                <p>基于 Docker 的容器云计算平台，在 LeanCloud 基础<br />架构上以任意编程语言开发业务逻辑，满足定制化需<br />求。用最少代码，提供最大价值。</p>
+            </a>
+        </div>
+        <div class="content5">
+            <a href="https://leancloud.cn/rtm/">
+                <img src="img/7.png" width="75px" height="60px" />
+                <h6>即时通讯</h6>
+                <p>给产品嵌入类似 QQ 的功能，让用户沟通更便捷和高<br />效，体验更好。支持文字、图片、音视频聊天，支持<br />黑名单、公众号等高级功能。</p>
+            </a>
+        </div>
+        <div class="content6">
+            <a href="https://leancloud.cn/play/">
+                <img src="img/8.png" width="78px" height="60px" />
+                <h6>游戏解决方案</h6>
+                <p>针对手游行业的完整解决方案，支持多人在线对战、<br />排行榜等核心需求，并提供专业的运营数据统计分析<br />平台。</p>
+            </a>
+        </div>
+    </div>
+    <div class="img1">
+        <div class="img2"><img src="https://leancloud.cn/assets/imgs/index/platform.2b63eda1.svg" width="425px"
+                height="260px" /></div>
+        <div class="img3">
+            <p style="font-size: 45px; color: rgb(69,93,130);">全平台支持，上手简单</p>
+            <p class="tex">全平台 SDK 支持，帮助各平台开发者快速集成，研发与业务高效联动，让产品迅速到达市场。</p>
+            <img src="img/9.png" />
+        </div>
+    </div>
+    
+        <div class="zero">
+            <ul class="u">
+                <li >
+                    <p style="border: 1px solid blue;border-radius: 12px;background-color: steelblue;">Curl</p>
+                </li>
+                <li >
+                    <p>Java</p>
+                </li>
+                <li >
+                    <p>JS</p>
+                </li>
+                <li >
+                    <p>Obj-C</p>
+                </li>
+                <li >
+                    <p>Swift</p>
+                </li>
+                <li>
+                    <p>C#</p>
+                </li>
+                <li >
+                    <p>Python</p>
+                </li>
+                <li>
+                    <p>PHP</p>
+                </li>
+            </ul>
+            <ol  class="u3">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li style="height: 46px;">6</li>
+                <li>7</li>
+            </ol>
+            <div  class="u4">
+                <p>// how to save a new object.</p>
+                <p style="color: rgb(0,0,82);">curl -X POST</p>
+                <p> -H "X-LC-Id: {yourAppId}"</p>
+                <p> -H "X-LC-Key: {yourAppKey}"</p>
+                <p> -H "Content-Type: application/json"</p>
+                <p> -d '{"content": "每个 Java 程序员必备的 8 个开发工具","pubUser": "LeanCloud官方客服</p>
+                <p>,"pubTimestamp": 1435541999}'</p>
+                <p>https://zep7vtap.api.lncld.net/1.1/classes/Post</p>
+            </div>
+            
+            
+            <div class="u2">
+                <div class="pz">
+                    <p>数据模型与存储</p>
+                </div>
+                <div class="ps">
+                    <p>查询</p>
+                </div>
+                <div class="ps">
+                    <p>云引擎（Hook）</p>
+                </div>
+                <div class="ps">
+                    <p>即时通讯</p>
+                </div>
+                <div class="ps">
+                    <p>游戏对战</p>
+                </div>
+                <div class="ps"><a href="https://leancloud.cn/docs/" target="block">查看更多开发文档</a></div>
+            </div>
+        </div>
+   
+    <div class="power">
+        <div class="earth"><img src="https://leancloud.cn/assets/imgs/index/storage.9b04faf3.svg" width="400px"
+                height="330px" /></div>
+        <div class="earth1">
+            <p style="color: rgb(69,93,130); font-size: 40px; margin-top: 216px;">多节点覆盖，跨区域访问加速</p>
+            <p style="color: rgb(55,61,65); font-size: 18px; margin-top: 16px;line-height: 37px;">
+                一套服务部署到多个节点，给不同地域用户带来同样迅捷的产品使用体验。</p>
+        </div>
+        <div class="clear">
+            <p class="quare"><i><img src="img/10.png" /></i>支持企业客户按需部署需求，保证苹果终端设备推送的高到达率。</p>
+            <p class="quare1"><i><img src="img/11.png" /></i>
+                <为企业客户提供跨区域备份、异地多活等更高层级的数据安全和服务可用性保障。</p> </div> </div> <div class="b1">
+                    <div class="b2"><img src="https://leancloud.cn/assets/imgs/index/price.74d307ac.svg" width="420px"
+                            height="320px" /></div>
+                    <div class="b3">
+                        <P class="b4" style="color: rgb(69,93,130); font-size: 35px;">灵活的价格与部署方案</P>
+                        <p class="b4" style="color: rgb(55,61,65); font-size: 18px;margin-top: 40px;">
+                            针对不同阶段和用途的产品，我们提供了灵活的计费方案，帮你在成本和服务之间达到平衡。</p>
+                    </div>
+                    <div class="b5">
+                        <p class="b8"><i><img src="img/15.png" width="80px" height="69px" /></i>开发版</p>
+                        <p style="font-size: 18px; color: rgb(55,61,132); line-height: 35px;">
+                            针对开发阶段和个人项目的解决方案，功<br />能丰富，可免费使用。</p>
+                    </div>
+                    <div class="b6">
+                        <p class="b9"><i><img src="img/16.png" width="100px" height="100px" /></i>商用版</p>
+                        <p style="font-size: 18px; color: rgb(55,61,132); line-height: 35px;">
+                            高性能、高可用的商业应用解决方案，可以满足线上产品的要求。</p>
+                    </div>
+                    <div class="b7">
+                        <p class="b10"><i><img src="img/17.png" width="100px" height="100px" /></i>企业版</p>
+                        <p style="font-size: 18px; color: rgb(55,61,132); line-height: 35px;">
+                            支持独立、私有、混合云等多种部署方<br />案，提供定制化开发服务，满足多样化的产品需求。</p>
+                    </div>
+                    <div class="independent"><a class="b11" href="https://leancloud.cn/pricing/">查看更多<span>›</span></a>
+                    </div>
+        </div>
+        <div class="pic">
+            <p style="font-size: 35px;color: rgb(69,93,130);padding-left: 497px;padding-top: 45px;">我们已服务超过 22 万开发团队</p>
+            <div id="picture">
+                <ul id="pictureroll">
+                    <li><img src="img/13.png" width=1200px /></li>
+                    <li><img src="img/14.png" width=1200px /></li>
+                    <li><img src="img/19.png" width=1200px /></li>
+                    <li><img src="img/13.png" width=1200px /></li>
+                </ul>
+            </div>
+            <ul id="logos">
+                <li class="i3"></li>
+                <li class="i2"></li>
+                <li class="i28"></li>
+            </ul>
+            <div class="i7"><a class="b11" href="https://leancloud.cn/customers/">查看更多 <span>›</span></a></div>
+        </div>
+        <div class="i8">
+            <div class="i9">
+                <h2 style="font-size: 37px;padding-top: 100px;">LeanCloud</h2>
+                <p class="i15"><a style="color: white;"
+                        href="https://leancloud.cn/dashboard/login.html#/signup">立即申请应用</a></p>
+                <p style="color: rgb(211,215,219);margin-top: 55px;">邮件订阅 LeanCloud Blog 的最新资讯</p>
+                <input class="i16" placeholder="请输入邮箱" />
+            </div>
+            <div class="i10">
+                <ul class="i17">
+                    <li>
+                        <p style="color: white;">产品</p>
+                    </li>
+                    <li><a class="i18" href="https://leancloud.cn/storage/">数据储存</a> </li>
+                    <li><a class="i18" href="https://leancloud.cn/engine/">云引擎+云缓存</a></li>
+                    <li><a class="i18" href="https://leancloud.cn/engine/">即时通讯</a></li>
+                    <li><a class="i18" href="https://leancloud.cn/notification/">消息推送</a></li>
+                    <li><a class="i18" href="https://leancloud.cn/sms/">短信</a></li>
+                    <li><a class="i18" href="https://leancloud.cn/play/">游戏解决方案</a></li>
+                    <li><a class="i18" href="https://leancloud.cn/miniprogram/">微信小程序</a></li>
+                    <li><a class="i18" href="https://status.leancloud.cn/">服务健康状态</a></li>
+                </ul>
+            </div>
+            <div class="i11">
+                <ul class="i19">
+                    <li>
+                        <p style="color: white;">资源</p>
+                    </li>
+                    <li><a class="i18" href="https://leancloud.cn/docs/">文档</a> </li>
+                    <li><a class="i18" href="https://leancloud.cn/tutorials/">讲座视频</a></li>
+                    <li><a class="i18" href="https://a.leancloud.cn/">推荐计划</a></li>
+                    <li><a class="i18" href="https://forum.leancloud.cn/">论坛</a></li>
+                    <li><a class="i18" href="https://leanticket.cn/t/leancloud">工单</a></li>
+                </ul>
+            </div>
+            <div class="i11">
+                <ul class="i19">
+                    <li>
+                        <p style="color: white;">公司</p>
+                    </li>
+                    <li><a class="i18" href="https://leancloud.cn/about/">关于我们</a> </li>
+                    <li><a class="i18" href="https://open.leancloud.cn/">开放资源</a></li>
+                    <li><a class="i18" href="https://leancloud.cn/jobs/">工作机会</a></li>
+                    <li><a class="i18" href="https://leancloud.cn/news/">媒体报道</a></li>
+                    <li><a class="i18" href="https://leancloud.cn/terms/">使用协议</a></li>
+                    <li><a class="i18" href="https://leancloudblog.com/">博客</a></li>
+                    <li><a class="i18" href="https://leancloud.cn/logo/">Logo</a></li>
+                </ul>
+            </div>
+            <div class="i11">
+                <ul class="i19">
+                    <li>
+                        <p style="color: white;">社交网络</p>
+                    </li>
+                    <div class="i20">
+                        <p>微信</p>
+                        <div class="i21"><img src="img/27.png" width="110px" height="110px" />
+                        </div>
+                    </div>
+                    <li><a class="i18" href="https://weibo.com/avoscloud">微博</a></li>
+                    <li><a class="i18" href="https://zhuanlan.zhihu.com/leancloud-eng">知乎专栏</a></li>
+                    <li><a class="i18" href="https://github.com/leancloud">GitHub</a></li>
+                    <li><a class="i18" href="https://twitter.com/leancloudrocks">Twitter</a></li>
+                    <li><a class="i18" href="https://www.facebook.com/leancloudus">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="i14">
+            <p>京公网安备 11010502036747 号 · 京 ICP 备 12025059-8</p>
+        </div>
+        <script src="js.js"></script>
+</body>
+
+</html>
