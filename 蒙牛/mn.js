@@ -1,4 +1,3 @@
-
 var a = document.querySelectorAll(".wheelPlanting1");
 var wheelPlanting = document.getElementById("wheelPlanting");
 var knife = true;
@@ -19,6 +18,12 @@ wheelPlanting.onmousewheel = function (event) {
             icon.style.overflow = "";
             i--;
         }
+        // setInterval(function(){
+        //     wheelPlanting.style.top = -i * 100 + "vh";
+        // },30)
+        setTimeout(function(){
+            wheelPlanting.style.top = -i * 100 + "vh";
+        },0)s
         if (i == 0) {
             document.getElementById("pic0").src = "img/35.png";
             document.getElementById("pic1").src = "img/34.png";
@@ -51,7 +56,6 @@ wheelPlanting.onmousewheel = function (event) {
             document.getElementById("pic4").src = "img/34.png";
             document.getElementById("pic5").src = "img/34.png";
         }
-        wheelPlanting.style.transition = "0.8s ease";
         if (i == 4) {
             document.getElementById("pic0").src = "img/34.png";
             document.getElementById("pic1").src = "img/34.png";
@@ -72,9 +76,10 @@ wheelPlanting.onmousewheel = function (event) {
             icon.style.overflow = "hidden";
             icon.style.transition = "0.8s ease";
         }
-        setTimeout(function () {
-            wheelPlanting.style.top = -i * 100 + "vh";
-        }, 0);
+        // setTimeout(function(){
+        //     wheelPlanting.style.top = -i * 100 + "vh";
+        // },0)
+        wheelPlanting.style.transition = "0.8s ease";
         setTimeout(function () {
             knife = true;
         }, 1000);
@@ -865,34 +870,42 @@ for (let m = 0; m < left_li.length - 1; m++) {
         // left_ul[this.indx].style.transition = "0.2s";
     }
 };
-var le = null;
+
+// var le = null;
 function le1(obj) {
-    clearInterval(le);
-    le = setInterval(function () {
+    clearInterval(left_ul[obj].le);
+    left_ul[obj].le = setInterval(function () {
         if (left_ul[obj].style.width >= 75 + "px") {
-            clearInterval(le);
+            clearInterval(left_ul[obj].le);
+            // left_ul[obj].style.width=75+"px";
         }
         else {
             console.log(left_ul[obj].style.width);
-            left_ul[obj].style.width = left_ul[obj].offsetWidth + 15 + "px";
+            left_ul[obj].style.width = left_ul[obj].offsetWidth + 10 + "px";
+            console.log(left_ul[obj].offsetWidth);
         }
     }, 30)
 }
-var le2 = null;
+// var le2 = null;
 function le3(obj) {
-    clearInterval(le2);
-    le2 = setInterval(function () {
+    clearInterval(left_ul[obj].le);
+    left_ul[obj].le = setInterval(function () {
         if (left_ul[obj].style.width <= 0 + "px") {
-            clearInterval(le2);
+            clearInterval(left_ul[obj].le);
+            // left_ul[obj].style.width=0+"px";
         }
         else {
-            left_ul[obj].style.width = left_ul[obj].offsetWidth - 15 + "px";
+            console.log(left_ul[obj].style.width);
+            left_ul[obj].style.width = left_ul[obj].offsetWidth - 10 + "px";
         }
     }, 30)
 }
 for (let fir = 1; fir < 5; fir++) {
+    left_li[fir].le = null;
     left_li[fir].onmouseenter = function () {
+        console.log(this.offsetWidth);
         this.ax = fir;
+        this.le
         console.log(this.ax);
         le1(this.ax);
     }
@@ -932,10 +945,10 @@ function opc3() {
 var time4 = null;
 function opc4() {
     var width4 = 277;
-    clearInterval(time4);
-    time4 = setInterval(function () {
+    clearInterval(time3);
+    time3 = setInterval(function () {
         if (width4 <= 257) {
-            clearInterval(time4);
+            clearInterval(time3);
         }
         else {
             width4 -= 1;
@@ -957,13 +970,13 @@ function opc3_1() {
         }
     }, 30)
 }
-var time4_1 = null;
+// var time3_1 = null;
 function opc4_1() {
     var width4_1 = 277;
-    clearInterval(time4_1);
-    time4_1 = setInterval(function () {
+    clearInterval(time3_1);
+    time3_1 = setInterval(function () {
         if (width4_1 <= 257) {
-            clearInterval(time4_1);
+            clearInterval(time3_1);
         }
         else {
             width4_1 -= 1;
@@ -988,10 +1001,10 @@ function opc3_2() {
 var time4_2 = null;
 function opc4_2() {
     var width4_2 = 277;
-    clearInterval(time4_2);
-    time4_2 = setInterval(function () {
+    clearInterval(time3_2);
+    time3_2 = setInterval(function () {
         if (width4_2 <= 257) {
-            clearInterval(time4_2);
+            clearInterval(time3_2);
         }
         else {
             width4_2 -= 1;
@@ -1001,11 +1014,11 @@ function opc4_2() {
 }
 var time3_2 = null;
 function opc3_3() {
-    clearInterval(time3_2);
+    clearInterval(time4_2);
     var width3_2 = 257;
-    time3_2 = setInterval(function () {
+    time4_2 = setInterval(function () {
         if (width3_2 >= 277) {
-            clearInterval(time3_2);
+            clearInterval(time4_2);
         }
         else {
             width3_2 += 1;
@@ -1589,13 +1602,13 @@ var t0 = null;
 function ts0() {
     clearInterval(t0);
     t0 = setInterval(function () {
-        if (lists[0].style.width >= 0.28 * a + "px") {
+        if (lists[0].style.width >= 0.29 * a + "px") {
             clearInterval(t0);
         }
         else {
-            lists[0].style.width = lists[0].offsetWidth + 8 + "px";//10
-            flats[0].style.left = flats[0].offsetLeft + 8 + "px";
-            lists[1].style.width = lists[1].offsetWidth - 8 + "px";
+            lists[0].style.width = lists[0].offsetWidth + 6 + "px";//10
+            flats[0].style.left = flats[0].offsetLeft + 6 + "px";
+            lists[1].style.width = lists[1].offsetWidth - 6 + "px";
         }
     }, 30)
 }
@@ -1620,42 +1633,42 @@ function start() {
             clearInterval(t2);
         }
         else {
-            lists[1].style.width = lists[1].offsetWidth + 16 + "px";//20
-            flats[0].style.left = flats[0].offsetLeft - 8 + "px";
-            flats[1].style.left = flats[1].offsetLeft + 8 + "px";
-            lists[2].style.width = lists[2].offsetWidth - 8 + "px";
-            lists[0].style.width = lists[0].offsetWidth - 8 + "px";
+            lists[1].style.width = lists[1].offsetWidth + 12 + "px";//20
+            flats[0].style.left = flats[0].offsetLeft - 6 + "px";
+            flats[1].style.left = flats[1].offsetLeft + 6 + "px";
+            lists[2].style.width = lists[2].offsetWidth - 6 + "px";
+            lists[0].style.width = lists[0].offsetWidth - 6 + "px";
         }
     }, 30)
 }
 var t3 = null;
 function end() {
-    clearInterval(t3);
-    t3 = setInterval(function () {
+    clearInterval(t2);
+    t2 = setInterval(function () {
         if (lists[1].style.width <= 0.25 * a + "px") {
-            clearInterval(t3);
+            clearInterval(t2);
         }
         else {
-            lists[1].style.width = lists[1].offsetWidth - 16 + "px";
-            flats[0].style.left = flats[0].offsetLeft + 8 + "px";
-            flats[1].style.left = flats[1].offsetLeft - 8 + "px";
-            lists[0].style.width = lists[0].offsetWidth + 8 + "px";
-            lists[2].style.width = lists[2].offsetWidth + 8 + "px";
+            lists[1].style.width = lists[1].offsetWidth - 12 + "px";
+            flats[0].style.left = flats[0].offsetLeft + 6 + "px";
+            flats[1].style.left = flats[1].offsetLeft - 6 + "px";
+            lists[0].style.width = lists[0].offsetWidth + 6 + "px";
+            lists[2].style.width = lists[2].offsetWidth + 6 + "px";
         }
     }, 30)
 }
 
 var t1 = null;
 function ts1() {
-    clearInterval(t1);
-    t1 = setInterval(function () {
+    clearInterval(t0);
+    t0 = setInterval(function () {
         if (lists[0].style.width <= 0.25 * a + "px") {
-            clearInterval(t1);
+            clearInterval(t0);
         }
         else {
-            lists[0].style.width = lists[0].offsetWidth - 8 + "px";
-            flats[0].style.left = flats[0].offsetLeft - 8 + "px";
-            lists[1].style.width = lists[1].offsetWidth + 8 + "px";
+            lists[0].style.width = lists[0].offsetWidth - 6 + "px";
+            flats[0].style.left = flats[0].offsetLeft - 6 + "px";
+            lists[1].style.width = lists[1].offsetWidth + 6 + "px";
         }
     }, 30)
 }
@@ -1679,27 +1692,26 @@ function start1() {
             clearInterval(t4);
         }
         else {
-            lists[2].style.width = lists[2].offsetWidth + 16 + "px";
-            flats[1].style.left = flats[1].offsetLeft - 8 + "px";
-            flats[2].style.left = flats[2].offsetLeft + 8 + "px";
-            lists[3].style.width = lists[3].offsetWidth - 8 + "px";
-            lists[1].style.width = lists[1].offsetWidth - 8 + "px";
+            lists[2].style.width = lists[2].offsetWidth + 12 + "px";
+            flats[1].style.left = flats[1].offsetLeft - 6 + "px";
+            flats[2].style.left = flats[2].offsetLeft + 6 + "px";
+            lists[3].style.width = lists[3].offsetWidth - 6 + "px";
+            lists[1].style.width = lists[1].offsetWidth - 6 + "px";
         }
     }, 30)
 }
-var t5 = null;
 function end1() {
-    clearInterval(t5);
-    t5 = setInterval(function () {
+    clearInterval(t4);
+    t4 = setInterval(function () {
         if (lists[2].style.width <= 0.25 * a + "px") {
-            clearInterval(t5);
+            clearInterval(t4);
         }
         else {
-            lists[2].style.width = lists[2].offsetWidth - 16 + "px";
-            flats[1].style.left = flats[1].offsetLeft + 8 + "px";
-            flats[2].style.left = flats[2].offsetLeft - 8 + "px";
-            lists[1].style.width = lists[1].offsetWidth + 8 + "px";
-            lists[3].style.width = lists[3].offsetWidth + 8 + "px";
+            lists[2].style.width = lists[2].offsetWidth - 12 + "px";
+            flats[1].style.left = flats[1].offsetLeft + 6 + "px";
+            flats[2].style.left = flats[2].offsetLeft - 6 + "px";
+            lists[1].style.width = lists[1].offsetWidth + 6 + "px";
+            lists[3].style.width = lists[3].offsetWidth + 6 + "px";
         }
     }, 30)
 }
@@ -1710,30 +1722,29 @@ lists[2].onmouseleave = function () {
     end1();
 }
 var t7 = null;
-function start2() {
+function start2(estar) {
     clearInterval(t7);
     t7 = setInterval(function () {
         if (lists[3].style.width >= 0.28 * a + "px") {
             clearInterval(t7);
         }
         else {
-            lists[3].style.width = lists[3].offsetWidth + 8 + "px";
-            flats[2].style.left = flats[2].offsetLeft - 8 + "px";
-            lists[2].style.width = lists[2].offsetWidth - 8 + "px";
+            lists[3].style.width = lists[3].offsetWidth + 6 + "px";
+            flats[2].style.left = flats[2].offsetLeft - 6 + "px";
+            lists[2].style.width = lists[2].offsetWidth - 6 + "px";
         }
     }, 30)
 }
-var t8 = null;
 function end2() {
-    clearInterval(t8);
-    t8 = setInterval(function () {
+    clearInterval(t7);
+    t7 = setInterval(function () {
         if (lists[3].style.width <= 0.25 * a + "px") {
-            clearInterval(t8);
+            clearInterval(t7);
         }
         else {
-            lists[3].style.width = lists[3].offsetWidth - 8 + "px";
-            flats[2].style.left = flats[2].offsetLeft + 8 + "px";
-            lists[2].style.width = lists[2].offsetWidth + 8 + "px";
+            lists[3].style.width = lists[3].offsetWidth - 6 + "px";
+            flats[2].style.left = flats[2].offsetLeft + 6 + "px";
+            lists[2].style.width = lists[2].offsetWidth + 6 + "px";
         }
     }, 30)
 }
