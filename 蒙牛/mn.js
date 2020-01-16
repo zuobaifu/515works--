@@ -23,7 +23,7 @@ wheelPlanting.onmousewheel = function (event) {
         // },30)
         setTimeout(function(){
             wheelPlanting.style.top = -i * 100 + "vh";
-        },0)s
+        },0)
         if (i == 0) {
             document.getElementById("pic0").src = "img/35.png";
             document.getElementById("pic1").src = "img/34.png";
