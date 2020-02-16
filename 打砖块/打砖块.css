@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#background{
+    background-image: url("img/1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+}
+#screen{
+    width: 600px;
+    height: 600px;
+    position: relative;
+    border: 1px solid red;
+    left: 15%;
+    top: 20px;
+    float: left;
+    background-image: url("img/1.jfif");
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed;
+    background-size: 100% 100%; */
+}
+#ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 270px;
+    bottom: 21px;
+    background-color: #2BEB22
+}
+#baffle{
+    position: absolute;
+    bottom: 0px;
+    left: 225px;
+    width: 100px;
+    height: 20px;
+    background-color: #00B5BC;
+    border-radius: 12px;
+}
+#brick>div{
+    width: 58px;
+    height: 20px;
+    border: 1px solid black;
+    float: left;
+}
+#brick{
+    position: relative;
+}
+#meun{
+    margin-top: 20px;
+    width: 400px;
+    height: 600px;
+    float: left;
+    position: relative;
+    right: -15%;
+    background-image: url("img/3.jpg");
+}
+#start>p{
+    margin-left: 160px;
+    border: 1px solid black;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 20px;
+    border-radius: 12px;
+    background-color: aqua;
+    color: cadetblue;
+    cursor: pointer;
+}
+#start>p:hover{
+    background-color: #00B5BC;
+    transition: 1s;
+}
+#score{
+    text-align: center;
+    margin-top: 60px;
+    color: red;
+}
+.bottom p:first-child{
+    text-align: center;
+    margin-top: 33px;
+    color: beige;
+}
+.bottom p:last-child{
+    text-align: center;
+    margin-top: 10px;
+    color: beige;
+}
+#explain>p{
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    color: tomato;
+}
